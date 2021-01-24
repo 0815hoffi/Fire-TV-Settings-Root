@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.markus.firetools"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+        
+    <!-- for DisplayAndSoundsActivity / AccessibilityActivity / MyAccountActivity / DeviceActivity -->
+    <uses-permission android:name="com.amazon.tv.permission.LAUNCHER_SETTINGS" />
+    <!-- for setting.AlexaSettingActivity -->
+    <uses-permission android:name="com.amazon.vizzini.setting.permission.ALEXA_SETTING" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity
+            android:name=".MainActivity"
+            android:banner="@drawable/ic_hud_settings_stick"
+            android:icon="@drawable/ic_hud_settings_stick"
+            android:label="@string/app_name"
+            android:logo="@drawable/ic_hud_settings_stick"
+            android:screenOrientation="landscape"
+            android:launchMode="singleInstance"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <action android:name="android.settings.SETTINGS" /> -->
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A1Activity"
+        android:banner="@drawable/ic_hud_sleep_default"
+        android:icon="@drawable/ic_hud_sleep_default"
+        android:label="@string/two_opts_res3"
+        android:logo="@drawable/ic_hud_sleep_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A1Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A2Activity"
+        android:banner="@drawable/ic_hud_mydevice_default"
+        android:icon="@drawable/ic_hud_mydevice_default"
+        android:label="@string/two_opts_device"
+        android:logo="@drawable/ic_hud_mydevice_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A2Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A3Activity"
+        android:banner="@drawable/ic_hud_apps_default"
+        android:icon="@drawable/ic_hud_apps_default"
+        android:label="@string/two_opts_app"
+        android:logo="@drawable/ic_hud_apps_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A3Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A4Activity"
+        android:banner="@drawable/ic_hud_bt_default"
+        android:icon="@drawable/ic_hud_bt_default"
+        android:label="@string/two_opts_dev"
+        android:logo="@drawable/ic_hud_bt_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A4Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A5Activity"
+        android:banner="@drawable/ic_hud_gs_default"
+        android:icon="@drawable/ic_hud_gs_default"
+        android:label="@string/two_opts_res2"
+        android:logo="@drawable/ic_hud_gs_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A5Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A6Activity"
+        android:banner="@drawable/ic_hud_sc_default"
+        android:icon="@drawable/ic_hud_sc_default"
+        android:label="@string/two_opts_res8"
+        android:logo="@drawable/ic_hud_sc_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A6Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A7Activity"
+        android:banner="@drawable/ic_hud_net_default"
+        android:icon="@drawable/ic_hud_net_default"
+        android:label="@string/two_opts_net"
+        android:logo="@drawable/ic_hud_net_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A7Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".A8Activity"
+        android:banner="@drawable/ic_hud_reboot_default"
+        android:icon="@drawable/ic_hud_reboot_default"
+        android:label="@string/two_opts_res5"
+        android:logo="@drawable/ic_hud_reboot_default"
+        android:screenOrientation="landscape"
+        android:taskAffinity="com.Markus.FireTools.A8Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+   </application>
+
+</manifest>

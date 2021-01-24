@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fire TV Settings</string>
+    <string name="two_opts_display">Display and Sound</string>
+    <string name="two_opts_net">Network</string>
+    <string name="two_opts_dev">Bluetooth and Remotes</string>
+    <string name="two_opts_access">Accessibility</string>
+    <string name="two_opts_app">Applications</string>
+    <string name="two_opts_pref">Preferences</string>
+    <string name="two_opts_device">My FireTV</string>
+    <string name="two_opts_account">Amazon Account</string>
+    <string name="two_opts_res1">Notifications</string>
+    <string name="two_opts_res2">Equipment</string>
+    <string name="two_opts_res3">Sleep</string>
+    <string name="two_opts_nix"> </string>
+    <string name="two_opts_res4">Developer Tools Menu</string>
+    <string name="two_opts_res5">Reboot</string>
+    <string name="two_opts_res6">Enable ADB</string>
+    <string name="two_opts_res7">Enable non Market Apps</string>
+    <string name="two_opts_res8">Screensaver</string>
+    <string name="two_opts_res9">Enable CustomLauncher 1-2</string>
+    <string name="two_opts_res91">Enable CustomLauncher 2-2</string>
+    <string name="two_opts_res10">Disable CustomLauncher 1-2</string>
+    <string name="two_opts_res11">Disable CustomLauncher 2-2</string>
+</resources>
